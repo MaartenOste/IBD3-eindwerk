@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>IBD3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header >
+		<div>
+			<a href="./index.html"><img class="header-img" src="./images/students.jpg" alt=""></a>
+		</div>
+		<div>
+			<nav>
+				<a href="./index.html" class="nav-item"> Home</a>
+				<a href="./tijdlijn.html" class="nav-item"> Tijdlijn</a>
+				<a href="./ons-project.html" class="nav-item"> Download</a>
+			</nav>
+		</div>
+		
+	</header>
+	<div id="timeline__title">Klik op een punt in ons ontwikkelingsproces om meer info te krijgen.</div>
+	<div class="events" id="events">
+		<ol class="events-list" id="events-list">
+			<li><a href="#" id="nav-0" onclick="setSelected(0)">Doelgroep</a></li>
+			<li><a href="#" id="nav-1" onclick="setSelected(1)">Probleemanalyse</a></li>
+			<li><a href="#" id="nav-2" onclick="setSelected(2)">Prototype</a></li>
+			<li><a href="#" id="nav-3" onclick="setSelected(3)">Business model</a></li>
+			<li><a href="#" id="nav-4" onclick="setSelected(4)">Ethiek</a></li>
+			<li><a href="#" id="nav-5" onclick="setSelected(5)">Eindresultaat</a></li>
+		</ol>
+		<span id="filling-line"></span>
+	</div>
+	<section class="cd-horizontal-timeline">
+
+
+		<div class="events-content">
+			<div id="details">
+				<div id="content-0" class="content-container">
+					<div class="content-row">
+						<h2>Doelgroep</h2>
+						<p>
+							In onze eerste stap probeerden we onze doelgroep beter te leren kennen. Voor ons onderzoek
+							richtten we ons op zowel docenten als studeten met als doel online legeven te verbeteren. Na
+							uitgebreid online research te doen gingen we op zoek naar vrijwilligers om persoon per
+							persoon de problemen bloot te leggen.We ondervraagden een 100-tal vrijwilligers zodat we een
+							goed overzicht kregen van waar het schoentje wrong.
+						</p>
+					</div>
+					<div>
+						<img src="./images/students.jpg" alt="">
+					</div>
+				</div>
+
+				<div id="content-1" class="content-container">
+					<h2>Probleemanalyse</h2>
+					Zowel docenten als studenten gaven ongeveer dezelfde problemen aan:
+					<div class="post-it-collection">
+						<div class="post-it-note-small">
+							<p>Studenten zijn sneller afgeleid</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Gebrek aan interactie met de docent / andere studenten</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Lessen minder bekeken/ bijgewoond</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="content-2" class="content-container ">
+					<h2>Analyse Brainstorm</h2>
+					Voor het verloop van deze fase baseerden we ons op de Field Guide. We gebruikten enkele van de
+					voorgestelde methodes om onze brainstorm vlot te laten verlopen.
+					Op de post-it zijn alle problemen die uit de enquête kwamen nog eens opgelijst:
+					<div class="post-it-collection">
+						<div class="post-it-note-small">
+							<p>71% van de student is sneller afgeleid</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>60% stelt het bekijken van de lessen uit</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>25% klaagt over minder nuances op belangrijke delen</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Te weinig interactie in de meeting (niet durven spreken)</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>40% geeft aan minder vragen te hebben gesteld dan anders</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>25% van de leerkrachten heeft problemen met de software</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Aandacht kan moeilijk behouden worden tijdens online les</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Vragen werden het vaakst gesteld via de chat</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Docenten missen interactie met de studenten</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Probleem hebben met de software om online les te geven</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>41,7% Nuances met bepaalde delen van leerstof</p>
+						</div>
+						<div class="post-it-note-small">
+							<p>Lessen minder bekeken/ bijgewoond</p>
+						</div>
+					</div>
+
+					<h3>Thema’s uit analyse</h3>
+					In onze analyse zagen we vaak gelijkaardige problemen terugkomen. Deze hebben we ingedeeld in vier
+					verschillende thema’s.
+					<ul>
+						<li>Interactie in de les</li>
+						<li>Studeer habitude</li>
+						<li>Technische problemen</li>
+						<li>Diepgang leerstof</li>
+					</ul>
+
+					<h3>Insights</h3>
+					Uit deze thema’s kwamen we tot volgende inzichten:
+
+					<ul>
+						<li>Interactie tijdens de les:
+							<ul>
+								<li>Interactie tijdens de les verloopt moeizaam</li>
+								<li>De drempel om vragen stellen is voor vele studenten te hoog</li>
+							</ul>
+						</li>
+						<li>Studeer habitude:
+							<ul>
+								<li>Studenten volgen de lessen minder (aandachtig)</li>
+							</ul>
+						</li>
+						<li> Diepgang leerstof:
+							<ul>
+								<li>Onderscheiden wat belangrijk is en wat niet is moeilijk</li>
+							</ul>
+						</li>
+						<li>Technische problemen:
+							<ul>
+								<li>Het gebruik van computers brengt technische problemen met zich mee.</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h3>How might we …?</h3>
+					In dit onderdeel hebben we onze insights vertaald in concrete ‘hoe kunnen we’-vragen. Zo konden we
+					makkelijker oplossingen voor onze problemen bedenken.
+					<ul>
+						<li>Hoe kunnen we de interactie tijdens de les minder moeizaam maken?</li>
+						<li>Hoe kunnen we de leerlingen meer en aandachtiger laten volgen?</li>
+						<li>Hoe kunnen we ervoor zorgen dat de overgang naar online les beter verloopt op technisch
+							vlak?</li>
+						<li>Hoe kunnen we het voor studenten duidelijker maken wat belangrijk is in de cursus?</li>
+					</ul>
+
+					<h3>Ideeën</h3>
+					<ul>
+						<li>Hoe kunnen we de interactie tijdens de les minder moeizaam maken?
+							<div class="post-it-collection-scroll">
+								<div class="post-it-note-small">
+									<p>Camera aanzetten</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Kleinere groepen</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Antwoorden volg kaart</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Interactieve bevragingen (polls,kahoot,...)</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Meme reacties</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Leuke notificaties, aankondigingen, ...</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Punten zetten op interactie</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Meer groepswerken</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Kleine opdrachten geven tijdens de les</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Meer respons van studenten vragen</p>
+								</div>
+							</div>
+						</li>
+						<li>Hoe kunnen we de leerlingen meer en aandachtiger laten volgen?
+							<div class="post-it-collection-scroll">
+								<div class="post-it-note-small">
+									<p>punten zetten op interactie</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>kleine opdrachten geven tijdens de les</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Antwoorden volg kaart</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>GSM niet binnen handbereik</p>
+								</div>
+								<div class="post-it-note-wide">
+									<p>Mix van spraak & videokanaal en google drive-achtige samenwerking</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Herinnering vermelden</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Interactieve bevragingen (polls,kahoot,...)</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Meme reacties</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Leuke notificaties, aankondigingen, ...</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>interactiviteit door middel van live kleine quiz tijdens de les</p>
+								</div>
+								<div class="post-it-note-wide">
+									<p>Vervaldatum op het kijken van Lessen, maar waneer tijdig gevolg blijven ze
+										beschikbaar voor de examens</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Aanwezigheidslijsten zichtbaar maken</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Pauzes op voorhand aankondigen</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Verschillende Tools om les te geven combineren</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Sociale media blokken tijdens de les</p>
+								</div>
+							</div>
+
+						</li>
+						<li>Hoe kunnen we ervoor zorgen dat de overgang naar online les beter verloopt op technisch
+							vlak?
+							<div class="post-it-collection-scroll">
+								<div class="post-it-note-small">
+									<p>Opleiding rond de te gebruiken software</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Zelf een beter platform maken</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Hulplijn opzetten</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Handleiding van applicatie</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Youtube videos voor gebruiken app.</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Veelgestelde vragen sectie</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Spraaktechnologie toevoegen</p>
+								</div>
+								<div class="post-it-note-wide">
+									<p>Sessies inlassen voor personen die problemen ondervinden</p>
+								</div>
+							</div>
+						</li>
+						<li>Hoe kunnen we het voor studenten duidelijker maken wat belangrijk is in de cursus?
+							<div class="post-it-collection-scroll">
+								<div class="post-it-note-small">
+									<p>Geanimeerde cursus</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Interactive inleidingen</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>Leerdoelen per les duidelijk weergeven</p>
+								</div>
+								<div class="post-it-note-wide">
+									<p>Digitale cursus, waarbij belangrijke delen makkelijk door student kunnen
+										opgeslaan worden</p>
+								</div>
+								<div class="post-it-note-wide">
+									<p>Klein quiz/ test van bepaalde onderwerpen na terugkomst applicatie</p>
+								</div>
+								<div class="post-it-note-small">
+									<p>sectie "extra's" toevoegen in modules</p>
+								</div>
+								<div class="post-it-note-wide">
+									<p>auto save van Audio-bestand van de voorgaande 30sec als 'belangrijk' wordt gezegd
+										door docent of de docent het laten aangeven met een knop</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<h3>Oplossingen</h3>
+					Voorlopig zijn we nog niet aan concrete oplossingen begonnen. Onze eerstvolgende stap is het
+					terugkoppelen naar de doelgroep van onze ideeën. Met een beter zicht op wat onze doelgroep al dan
+					niet ziet zitten, kunnen we de oplossing op maat maken.
+				</div>
+
+				<div id="content-3" class="content-container">
+					<h2>Analyse terugkoppeling</h2>
+					<em>Ondertitel</em>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit
+						recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus
+						sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi!
+						Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro
+						doloribus.
+					</p>
+				</div>
+
+				<div id="content-4" class="content-container">
+					<h2>Business Model Canvas</h2>
+					<em>Ondertitel</em>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit
+						recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus
+						sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi!
+						Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro
+						doloribus.
+					</p>
+				</div>
+
+				<div id="content-5" class="content-container">
+					<h2>Eindresultaat</h2>
+					<em>Ondertitel</em>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit
+						recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus
+						sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi!
+						Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro
+						doloribus.
+					</p>
+				</div>
+			</div>
+		</div> <!-- .events-content -->
+	</section>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import './post-it.css';
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.675rem;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #383838;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+
+
+.header-img{
+  height: 10vh;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav a{
+  width: 10vw;
+  color: black;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  width: 10vw;
+  color: black;
+}
+
+
+a {
+  color: #7b9d6f;
+  text-decoration: none;
+}
+
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+
+}
+
+
+.intro{
+	position: relative;
+	color: black;
+	display: flex;
+	width: 100%;
+	height: 90vh; 
+  background: linear-gradient(0deg, rgb(56, 161, 247) 0%, rgb(111, 183, 241) 100%);
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+/*rgb(111, 183, 241)*/
+
+.introname{
+  font-family: 'Audiowide', cursive;
+	font-size: 10rem;
+	font-weight: bold;
+	line-height: 8rem;
+	color: white;
+  animation: nameIn 1s ease-in-out;
+}
+
+.introcontent {
+  max-width: 50%;
+}
+
+.introtext__explanation{
+  margin-bottom: 5vh;
+  font-size: 3rem;
+  font-family: 'Audiowide', cursive;
+  font-style: italic;
+}
+
+.introtext{
+	font-size: 1.5rem;
+	font-weight: 100;
+	animation: textIn 2s ease-in-out;
+}
+
+
+
+#profilepicture{
+	object-fit: cover;
+	width: 40rem;
+	height: 40rem;
+	border-radius: 50%;
+	border: 0.5rem white solid;
+  animation: appear 3s ease-in-out;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#timeline__title{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10%;
+  margin-top: 30vh;
+  margin-bottom: 5vh;
+
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.events{
+  position: absolute;
+  bottom: 35vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10%;
+}
+
+.events.fixed{
+  bottom: 0;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10%;
+  z-index: 100;
+  background-color: rgb(233, 245, 255);
+}
+
+#filling-line{
+  position: absolute;
+  bottom: 25px;
+  width: 0%;
+  height: 5px;
+  background-color: rgb(111, 183, 241);
+  z-index: -1;
+}
+
+.events-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.events-list li{
+  list-style: none;
+  width: 15%;
+}
+
+li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  height: 100%;
+  color: black;
+  text-align: center;
+}
+
+.events-list li a::after{
+  content: '○';
+  font-size: 50px;
+}
+
+.content-container{
+  display: none;
+  box-sizing: border-box;
+  padding: 2.5vh 0;
+}
+
+.events-content div div.selected{
+  display: block;
+}
+
+.events-list li a.active::after{
+  content: '●';
+  font-size: 50px;
+  color: rgb(111, 183, 241);
+}
+
+.events-list li a.currentnav{
+  font-weight: bold;
+}
+
+#details{
+  width: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#detail div{
+  width: 100%;
+}
+
+#content-1 table{
+  box-sizing: border-box;
+  width: 80%;
+  margin: 5% auto;
+  border-collapse: collapse;
+}
+
+th{
+  box-sizing: border-box;
+  padding: 20px 10px;
+  border: black 1px solid;
+}
+
+th.positive{
+  background-color: green;
+  color: white;
+}
+
+th.negative{
+  background-color: red;
+  color: white;
+}
+
+
+td {
+  box-sizing: border-box;
+  padding: 10px ;
+  border: black 1px solid;
+
+}
