@@ -30,7 +30,27 @@ header{
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0 5%;
-  background-color: rgb(233, 245, 255);
+  /*background-color: rgb(233, 245, 255);*/
+  background-color: white;
+}
+
+h2{
+	font-size: 4rem;
+	font-weight: bold;
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+}
+
+h2::before{
+  position: absolute;
+  left: -1rem;
+  bottom: 0.5rem;
+  height: 1.5rem;
+  width: 50%;
+  background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
+  content: '';
+  z-index: -1;
 }
 
 
@@ -44,17 +64,18 @@ nav{
   align-items: center;
 }
 
-nav a{
+.nav-item{
+  text-transform: uppercase;
   width: 10vw;
-  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #933A8F;
 }
 
-nav a:hover{
-  text-decoration: underline;
+.nav-item:hover{
   width: 10vw;
-  color: black;
+  color:#2FC3F5;
 }
-
 
 a {
   color: #7b9d6f;
@@ -64,22 +85,22 @@ a {
 p {
   word-wrap: break-word;
   overflow-wrap: break-word;
-
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
 
 }
 
-
 .mainpage__container{
 	position: relative;
 	color: black;
 	display: flex;
 	width: 100%;
-	min-height: 90vh; 
+	min-height: 80vh; 
   display: flex;
-	justify-content: space-around;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0 10vw;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -87,31 +108,51 @@ p {
 
 .introname{
   font-family: 'Audiowide', cursive;
-	font-size: 10rem;
+	font-size: 5rem;
 	font-weight: bold;
-	line-height: 8rem;
+  line-height: 8rem;
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+}
+
+.introname::before{
+  position: absolute;
+  left: -1.5rem;
+  bottom: 1.5rem;
+  height: 2rem;
+  width: 50%;
+  background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
+  content: '';
+  z-index: -1;
 }
 
 .introcontent {
-  max-width: 50%;
+  max-width: 35%;
 }
 
 .introtext__explanation{
-  margin-bottom: 5vh;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Audiowide', cursive;
   font-style: italic;
 }
 
 .introtext{
 	font-size: 1.5rem;
-	font-weight: 100;
+  font-weight: 100;
+  margin: 2vh 0 3vh 0;
+
 }
 
 #profilepicture{
+	width: 40rem;
+	max-height: 40rem;
+}
+
+#downloadpicture{
 	object-fit: cover;
 	width: 40rem;
-	height: 40rem;
+	height: 30rem;
 }
 
 #timeline__title{
@@ -119,7 +160,8 @@ p {
   height: 10vh;
   box-sizing: border-box;
   padding: 0 10%;
-  margin-top: 30vh;
+  padding-top:  30vh;
+
   margin-bottom: 30vh;
 
   font-size: 3rem;
@@ -143,7 +185,7 @@ p {
   box-sizing: border-box;
   padding: 0 10%;
   z-index: 100;
-  background-color: rgb(233, 245, 255);
+  background-color: white;
 }
 
 #filling-line{
@@ -151,7 +193,7 @@ p {
   bottom: 25px;
   width: 0%;
   height: 5px;
-  background-color: rgb(111, 183, 241);
+  background-color: #933A8F;
   z-index: -1;
 }
 
@@ -193,6 +235,10 @@ li a{
   margin-bottom: 100px;
 }
 
+.container-0{
+  background-color: rgb(233, 245, 255);
+}
+
 .content-row{
   display: flex;
   flex-direction: row;
@@ -216,7 +262,7 @@ li a{
 .events-list li a.active::after{
   content: '●';
   font-size: 50px;
-  color: rgb(111, 183, 241);
+  color: #2FC3F5;
 }
 
 .events-list li a.currentnav{
@@ -293,4 +339,27 @@ footer {
   color: black;
   text-align: left;
   display: block;
+}
+
+.coloredbutton{
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
+  margin: 0 2vh;
+}
+
+.coloredbutton:hover{
+  cursor: pointer;
+  background: linear-gradient(-45deg,#933A8F 30%, #2FC3F5 100%);
+}
+
+.timelinemain{
+  background-color: rgb(233, 245, 255);
+  min-height: 90vh;
+  box-sizing: border-box;
 }

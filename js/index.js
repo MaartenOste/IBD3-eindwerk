@@ -12,12 +12,10 @@ const setSelected = (id) => {
 			clearInterval(id);
 			document.getElementById('events').classList.add('fixed');
 			elem.style.bottom = 0 + 'px'; 
-
 			moved = true;
 			setSelected(tempId);
 		  } else {
-			console.log(pos);
-			pos-=25; 
+			pos-=25;
 			elem.style.bottom = pos + 'px'; 
 		  }
 		}
