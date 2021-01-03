@@ -4,6 +4,8 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
+	box-sizing: border-box;
+	padding: 5vh 0;
 }
 
 .post-it-collection-scroll{

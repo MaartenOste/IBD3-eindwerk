@@ -8,18 +8,17 @@
 </head>
 
 <body>
-	<header >
+	<header>
 		<div>
-			<a href="./index.html"><img class="header-img" src="./images/students.jpg" alt=""></a>
+			<a href="./index.html"><img class="header-img" src="./images/online-learning.jpg" alt=""></a>
 		</div>
 		<div>
 			<nav>
 				<a href="./index.html" class="nav-item"> Home</a>
 				<a href="./tijdlijn.html" class="nav-item"> Tijdlijn</a>
-				<a href="./ons-project.html" class="nav-item"> Download</a>
+				<a href="./tijdlijn.html" class="nav-item"> Download</a>
 			</nav>
 		</div>
-		
 	</header>
 	<div id="timeline__title">Klik op een punt in ons ontwikkelingsproces om meer info te krijgen.</div>
 	<div class="events" id="events">
@@ -40,18 +39,24 @@
 			<div id="details">
 				<div id="content-0" class="content-container">
 					<div class="content-row">
-						<h2>Doelgroep</h2>
-						<p>
-							In onze eerste stap probeerden we onze doelgroep beter te leren kennen. Voor ons onderzoek
-							richtten we ons op zowel docenten als studeten met als doel online legeven te verbeteren. Na
-							uitgebreid online research te doen gingen we op zoek naar vrijwilligers om persoon per
-							persoon de problemen bloot te leggen.We ondervraagden een 100-tal vrijwilligers zodat we een
-							goed overzicht kregen van waar het schoentje wrong.
-						</p>
+						<div class="row-item">
+							<h2>Doelgroep</h2>
+							<p>
+								In onze eerste stap probeerden we onze doelgroep beter te leren kennen. Voor ons
+								onderzoek
+								richtten we ons op zowel docenten als studeten met als doel online legeven te
+								verbeteren. Na
+								uitgebreid online research te doen gingen we op zoek naar vrijwilligers om persoon per
+								persoon de problemen bloot te leggen.We ondervraagden een 100-tal vrijwilligers zodat we
+								een
+								goed overzicht kregen van waar het schoentje wrong.
+							</p>
+						</div>
+						<div>
+							<img src="./images/students.jpg" alt="">
+						</div>
 					</div>
-					<div>
-						<img src="./images/students.jpg" alt="">
-					</div>
+
 				</div>
 
 				<div id="content-1" class="content-container">
@@ -68,249 +73,102 @@
 							<p>Lessen minder bekeken/ bijgewoond</p>
 						</div>
 					</div>
+					Op basis van deze problemen gingen we aan de slag om onze app te maken.
 				</div>
 
 				<div id="content-2" class="content-container ">
-					<h2>Analyse Brainstorm</h2>
-					Voor het verloop van deze fase baseerden we ons op de Field Guide. We gebruikten enkele van de
-					voorgestelde methodes om onze brainstorm vlot te laten verlopen.
-					Op de post-it zijn alle problemen die uit de enquête kwamen nog eens opgelijst:
-					<div class="post-it-collection">
-						<div class="post-it-note-small">
-							<p>71% van de student is sneller afgeleid</p>
+					<h2>Prototype</h2>
+					Als prototype hadden wij een applicatie in gedachte. De app bestaat uit 2 delen; een webapp en een
+					mobiele app. De 2 delen werken vlekkeloos samen en hebben als doel de aandacht van de gebruiker
+					volledig te kunnen focussen op de online les.
+
+					In de web app moet je bij aankomst in de les eerst een checklist voltooien.
+					In de checklist geef je toestemming tot:
+					<ul>
+						<li>Het gebruik van je camera</li>
+						<li>Microfoon</li>
+						<li>Het (tijdelijk) dempen van meldingen op je gsm</li>
+					</ul>
+
+					Met het tijdelijk dempen van de smartphone wordt bedoeld dat wanneer je de mobiele app opent, je
+					deze niet meer kan verlaten zolang je de webapp aan het gebruiken bent. Op deze manier kan men het
+					gebruik / afleiding van de smartphone tegengaan & de focus bij de les houden. Tijdens een online les
+					kunnen de studenten niet alleen luisteren naar de docent, maar bestaat er ook de mogelijkheid om
+					allerlei vragen op een leuke manier te beantwoorden. Dit willen we doen aan de hand van de mobile
+					app.
+
+
+
+
+
+					<div class="content-row prototype__row">
+						<div class="row-item">
+							<h3>Stappenplan voor deelname</h3>
+							<p>
+								In dit scherm vind je een overzicht van de stappen die je moet volgen alvorens je de les
+								kan
+								betreden, het bestaat uit 3 kleine delen die bijdragen tot een betere concentratie en
+								verloop van de
+								les.
+							</p>
 						</div>
-						<div class="post-it-note-small">
-							<p>60% stelt het bekijken van de lessen uit</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>25% klaagt over minder nuances op belangrijke delen</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>Te weinig interactie in de meeting (niet durven spreken)</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>40% geeft aan minder vragen te hebben gesteld dan anders</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>25% van de leerkrachten heeft problemen met de software</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>Aandacht kan moeilijk behouden worden tijdens online les</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>Vragen werden het vaakst gesteld via de chat</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>Docenten missen interactie met de studenten</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>Probleem hebben met de software om online les te geven</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>41,7% Nuances met bepaalde delen van leerstof</p>
-						</div>
-						<div class="post-it-note-small">
-							<p>Lessen minder bekeken/ bijgewoond</p>
+						<div>
+							<img class="prototype__image" src="./images/sherm1.png" alt="">
 						</div>
 					</div>
-
-					<h3>Thema’s uit analyse</h3>
-					In onze analyse zagen we vaak gelijkaardige problemen terugkomen. Deze hebben we ingedeeld in vier
-					verschillende thema’s.
-					<ul>
-						<li>Interactie in de les</li>
-						<li>Studeer habitude</li>
-						<li>Technische problemen</li>
-						<li>Diepgang leerstof</li>
-					</ul>
-
-					<h3>Insights</h3>
-					Uit deze thema’s kwamen we tot volgende inzichten:
-
-					<ul>
-						<li>Interactie tijdens de les:
-							<ul>
-								<li>Interactie tijdens de les verloopt moeizaam</li>
-								<li>De drempel om vragen stellen is voor vele studenten te hoog</li>
-							</ul>
-						</li>
-						<li>Studeer habitude:
-							<ul>
-								<li>Studenten volgen de lessen minder (aandachtig)</li>
-							</ul>
-						</li>
-						<li> Diepgang leerstof:
-							<ul>
-								<li>Onderscheiden wat belangrijk is en wat niet is moeilijk</li>
-							</ul>
-						</li>
-						<li>Technische problemen:
-							<ul>
-								<li>Het gebruik van computers brengt technische problemen met zich mee.</li>
-							</ul>
-						</li>
-					</ul>
-
-					<h3>How might we …?</h3>
-					In dit onderdeel hebben we onze insights vertaald in concrete ‘hoe kunnen we’-vragen. Zo konden we
-					makkelijker oplossingen voor onze problemen bedenken.
-					<ul>
-						<li>Hoe kunnen we de interactie tijdens de les minder moeizaam maken?</li>
-						<li>Hoe kunnen we de leerlingen meer en aandachtiger laten volgen?</li>
-						<li>Hoe kunnen we ervoor zorgen dat de overgang naar online les beter verloopt op technisch
-							vlak?</li>
-						<li>Hoe kunnen we het voor studenten duidelijker maken wat belangrijk is in de cursus?</li>
-					</ul>
-
-					<h3>Ideeën</h3>
-					<ul>
-						<li>Hoe kunnen we de interactie tijdens de les minder moeizaam maken?
-							<div class="post-it-collection-scroll">
-								<div class="post-it-note-small">
-									<p>Camera aanzetten</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Kleinere groepen</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Antwoorden volg kaart</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Interactieve bevragingen (polls,kahoot,...)</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Meme reacties</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Leuke notificaties, aankondigingen, ...</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Punten zetten op interactie</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Meer groepswerken</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Kleine opdrachten geven tijdens de les</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Meer respons van studenten vragen</p>
-								</div>
-							</div>
-						</li>
-						<li>Hoe kunnen we de leerlingen meer en aandachtiger laten volgen?
-							<div class="post-it-collection-scroll">
-								<div class="post-it-note-small">
-									<p>punten zetten op interactie</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>kleine opdrachten geven tijdens de les</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Antwoorden volg kaart</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>GSM niet binnen handbereik</p>
-								</div>
-								<div class="post-it-note-wide">
-									<p>Mix van spraak & videokanaal en google drive-achtige samenwerking</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Herinnering vermelden</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Interactieve bevragingen (polls,kahoot,...)</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Meme reacties</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Leuke notificaties, aankondigingen, ...</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>interactiviteit door middel van live kleine quiz tijdens de les</p>
-								</div>
-								<div class="post-it-note-wide">
-									<p>Vervaldatum op het kijken van Lessen, maar waneer tijdig gevolg blijven ze
-										beschikbaar voor de examens</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Aanwezigheidslijsten zichtbaar maken</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Pauzes op voorhand aankondigen</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Verschillende Tools om les te geven combineren</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Sociale media blokken tijdens de les</p>
-								</div>
-							</div>
-
-						</li>
-						<li>Hoe kunnen we ervoor zorgen dat de overgang naar online les beter verloopt op technisch
-							vlak?
-							<div class="post-it-collection-scroll">
-								<div class="post-it-note-small">
-									<p>Opleiding rond de te gebruiken software</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Zelf een beter platform maken</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Hulplijn opzetten</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Handleiding van applicatie</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Youtube videos voor gebruiken app.</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Veelgestelde vragen sectie</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Spraaktechnologie toevoegen</p>
-								</div>
-								<div class="post-it-note-wide">
-									<p>Sessies inlassen voor personen die problemen ondervinden</p>
-								</div>
-							</div>
-						</li>
-						<li>Hoe kunnen we het voor studenten duidelijker maken wat belangrijk is in de cursus?
-							<div class="post-it-collection-scroll">
-								<div class="post-it-note-small">
-									<p>Geanimeerde cursus</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Interactive inleidingen</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>Leerdoelen per les duidelijk weergeven</p>
-								</div>
-								<div class="post-it-note-wide">
-									<p>Digitale cursus, waarbij belangrijke delen makkelijk door student kunnen
-										opgeslaan worden</p>
-								</div>
-								<div class="post-it-note-wide">
-									<p>Klein quiz/ test van bepaalde onderwerpen na terugkomst applicatie</p>
-								</div>
-								<div class="post-it-note-small">
-									<p>sectie "extra's" toevoegen in modules</p>
-								</div>
-								<div class="post-it-note-wide">
-									<p>auto save van Audio-bestand van de voorgaande 30sec als 'belangrijk' wordt gezegd
-										door docent of de docent het laten aangeven met een knop</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-
-					<h3>Oplossingen</h3>
-					Voorlopig zijn we nog niet aan concrete oplossingen begonnen. Onze eerstvolgende stap is het
-					terugkoppelen naar de doelgroep van onze ideeën. Met een beter zicht op wat onze doelgroep al dan
-					niet ziet zitten, kunnen we de oplossing op maat maken.
+					<div class="content-row prototype__row">
+						<div>
+							<img class="prototype__image row-item" src="./images/sherm2.png" alt="">
+						</div>
+						<div>
+							<h3>Deelnemen aan groepen</h3>
+							<p>
+								Het volgende scherm heeft als doel deel te nemen aan een kleinere deelgroep van de
+								klasgroep. De kleine cirkels stellen de profielfoto’s van andere leerlingen voor, dit om
+								een visuele steun te bieden zodat je ziet welke groep je zal vervoegen.
+							</p>
+						</div>
+					</div>
+					<div class="content-row prototype__row">
+						<div class="row-item">
+							<h3>De les bekijken</h3>
+							<p>
+								Dit is het scherm waarop je de les volgt. Onderaan zie je een overzicht van de leden van
+								je groep. Met deze groepsleden kan je ongestoord praten, discussiëren en vragen stellen,
+								je audio wordt niet gedeeld met de hele klasgroep.
+								Het grote scherm is gereserveerd voor de docent, die kan duidelijk zijn/haar les geven.
+							</p>
+						</div>
+						<div>
+							<img class="prototype__image" src="./images/sherm3.png" alt="">
+						</div>
+					</div>
+					<div class="content-row prototype__row">
+						<div>
+							<img class="prototype__image row-item" src="./images/sherm_mobile.png" alt="">
+						</div>
+						<div>
+							<h3>Melding op smartphone
+							</h3>
+							<p>
+								Dit is het scherm dat je op je GSM te zien krijgt na het opstarten van de les, alle
+								meldingen worden tijdelijk uitgeschakeld, en je kan de mobile app niet verlaten.
+							</p>
+						</div>
+					</div>
+					<div class="content-row prototype__row">
+						<div class="row-item">
+							<h3>Hoe leerkrachten het zien
+							</h3>
+							<p>
+								Dit is het scherm dat de leerkracht te zien krijgt.
+								Onderaan staan alle groepen met aanduiding als er een vraag komt.
+							</p>
+						</div>
+						<div>
+							<img class="prototype__image" src="./images/sherm_teacher.png" alt="">
+						</div>
+					</div>
 				</div>
 
 				<div id="content-3" class="content-container">
