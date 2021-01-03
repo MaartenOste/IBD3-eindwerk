@@ -4,19 +4,20 @@ const setSelected = (id) => {
 	tempId = id
 	if(!moved){
 		const elem = document.getElementById('events');
-		let pos = Math.round((window.innerHeight- document.getElementById('events').getBoundingClientRect().bottom)/10)*10;
+		let pos = Math.round((document.getElementById('events').getBoundingClientRect().top)/10)*10;
+		console.log(window.innerHeight*0.10);
 		console.log(pos);
 		let id = setInterval(frame, 10);
 		function frame() {
-		  if (pos <= 0) {
+		  if (pos <= window.innerHeight*0.10) {
 			clearInterval(id);
 			document.getElementById('events').classList.add('fixed');
-			elem.style.bottom = 0 + 'px'; 
+			//elem.style.top = window.innerHeight*0.10 + 'px'; 
 			moved = true;
 			setSelected(tempId);
 		  } else {
 			pos-=25;
-			elem.style.bottom = pos + 'px'; 
+			elem.style.top = pos + 'px'; 
 		  }
 		}
 	}else {

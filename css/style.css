@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import './post-it.css';
 
 *, *::after, *::before {
@@ -23,6 +24,9 @@ body {
 }
 
 header{
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 10vh;
   display: flex;
   flex-direction: row;
@@ -32,30 +36,30 @@ header{
   padding: 0 5%;
   /*background-color: rgb(233, 245, 255);*/
   background-color: white;
+  z-index: 10;
 }
 
 h2{
-	font-size: 4rem;
-	font-weight: bold;
-  position: relative;
+  font-family: 'Crete Round', serif;
+	font-size: 5rem;
   width: fit-content;
   z-index: 2;
-}
-
-h2::before{
-  position: absolute;
-  left: -1rem;
-  bottom: 0.5rem;
-  height: 1.5rem;
-  width: 50%;
-  background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
-  content: '';
-  z-index: -1;
+  color: #933A8F;
 }
 
 
 .header-img{
   height: 10vh;
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;  
+}
+
+.headername{
+  margin-left: 2vw;
 }
 
 nav{
@@ -107,24 +111,11 @@ p {
 /*rgb(111, 183, 241)*/
 
 .introname{
-  font-family: 'Audiowide', cursive;
+  font-family: 'Crete Round', serif;
 	font-size: 5rem;
-	font-weight: bold;
-  line-height: 8rem;
-  position: relative;
   width: fit-content;
   z-index: 2;
-}
-
-.introname::before{
-  position: absolute;
-  left: -1.5rem;
-  bottom: 1.5rem;
-  height: 2rem;
-  width: 50%;
-  background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
-  content: '';
-  z-index: -1;
+  color: #933A8F;
 }
 
 .introcontent {
@@ -178,7 +169,7 @@ p {
 }
 
 .events.fixed{
-  bottom: 0;
+  top: 10vh;
   height: 100px;
   position: fixed;
   width: 100%;
@@ -231,8 +222,8 @@ li a{
   display: none;
   box-sizing: border-box;
   padding: 10vh 0;
+  padding-top: 25vh;
   min-height: 70vh;
-  margin-bottom: 100px;
 }
 
 .container-0{
@@ -348,9 +339,9 @@ footer {
   border-radius: 30px;
   height: 30px;
   box-sizing: border-box;
-  padding: 5px 15px;
+  padding: 5px 30px;
   background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
-  margin: 0 2vh;
+  margin: 2vh 0;
 }
 
 .coloredbutton:hover{
@@ -360,6 +351,6 @@ footer {
 
 .timelinemain{
   background-color: rgb(233, 245, 255);
-  min-height: 90vh;
+  min-height: 100vh;
   box-sizing: border-box;
 }
