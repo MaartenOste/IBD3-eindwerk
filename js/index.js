@@ -1,8 +1,11 @@
 let moved = false;
 let tempId = 0;
+
 const setSelected = (id) => {
 	tempId = id
 	if(!moved){
+		document.getElementById('timeline__title').style.display = 'none';
+
 		const elem = document.getElementById('events');
 		let pos = Math.round((document.getElementById('events').getBoundingClientRect().top)/10)*10;
 		console.log(window.innerHeight*0.10);
@@ -12,16 +15,14 @@ const setSelected = (id) => {
 		  if (pos <= window.innerHeight*0.10) {
 			clearInterval(id);
 			document.getElementById('events').classList.add('fixed');
-			//elem.style.top = window.innerHeight*0.10 + 'px'; 
 			moved = true;
 			setSelected(tempId);
 		  } else {
-			pos-=25;
+			pos-=10;
 			elem.style.top = pos + 'px'; 
 		  }
 		}
 	}else {
-		document.getElementById('timeline__title').style.display = 'none';
 	
 		const navs = document.getElementById('events-list').children;
 		for (let i = 0; i < navs.length; i++) {

@@ -21,6 +21,8 @@ body {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  padding-top: 10vh;
 }
 
 header{
@@ -45,8 +47,8 @@ h2{
   width: fit-content;
   z-index: 2;
   color: #933A8F;
+  margin: 0 0 2vh 0 ;
 }
-
 
 .header-img{
   height: 10vh;
@@ -305,7 +307,7 @@ td {
 }
 
 footer {
-  background-color: rgb(233, 245, 255);
+  background-color:white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -327,7 +329,7 @@ footer {
 }
 
 .footer-section ul li a{
-  color: black;
+  color: #933A8F;
   text-align: left;
   display: block;
 }
@@ -353,4 +355,19 @@ footer {
   background-color: rgb(233, 245, 255);
   min-height: 100vh;
   box-sizing: border-box;
+}
+
+.intextlink{
+  color: #933A8F;
+  cursor: pointer;
+
+}
+
+.intextlink:hover{
+  color: #2FC3F5;
+  cursor: pointer;
+}
+
+.ethieklowertext{
+  margin: 5vh 0 ;
 }
