@@ -57,7 +57,8 @@ h2{
 .branding {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;  
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .headername{
@@ -100,7 +101,6 @@ p {
 .mainpage__container{
 	position: relative;
 	color: black;
-	display: flex;
 	width: 100%;
 	min-height: 80vh; 
   display: flex;
@@ -341,7 +341,9 @@ footer {
   color: white;
   font-weight: bold;
   border-radius: 30px;
-  height: 30px;
+  height: 4vh;
+  font-size: 2vh;
+  line-height: 3.5vh;
   box-sizing: border-box;
   padding: 5px 30px;
   background: linear-gradient(135deg,#933A8F 30%, #2FC3F5 100%);
@@ -372,4 +374,49 @@ footer {
 
 .ethieklowertext{
   margin: 5vh 0 ;
+}
+
+@media only screen and (max-width: 992px) {
+  .content-container{
+    display: none;
+    box-sizing: border-box;
+    padding: 10vh 0;
+    min-height: 70vh;
+  }
+
+  .mainpage__container{
+    position: relative;
+    color: black;
+    width: 100%;
+    min-height: 0; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 8vh 10vw;
+    align-items: center;
+  }
+
+  .introcontent{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-1{
+    flex-direction: column-reverse;
+  }
+
+  .mobileitem{
+    margin-bottom: 5vh;
+  }
+
+  #content-0 .content-row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .ethiekmobile-none{
+    display: none;
+  }
 }
