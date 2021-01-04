@@ -62,3 +62,17 @@
 	height: 15%;
 	background-color:  rgb(206, 191, 120);
 }
+
+@media only screen and (max-width: 992px) {
+	.post-it-note-small {
+		flex: 0 0 auto;
+		width: 25%;
+		font-size: 1.5rem;
+		min-height: 13vw;
+		padding: 2em;
+		background: rgb(255, 238, 155);
+		position: relative;
+		clip-path: polygon(100% 0, 100% 85%, 85% 100%, 0 100%, 0 0);
+		margin: 15px;
+	}
+}
