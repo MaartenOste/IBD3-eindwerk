@@ -318,7 +318,9 @@ footer {
   width: 100%;
   min-height: 20vh;
 }
-
+.footer-section{
+  width: 20%;
+}
 .footer-section ul{
   padding: 0;
 }
