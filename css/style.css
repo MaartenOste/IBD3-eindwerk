@@ -376,12 +376,20 @@ footer {
   margin: 5vh 0 ;
 }
 
+.mobilerow{
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   .content-container{
     display: none;
     box-sizing: border-box;
     padding: 10vh 0;
     min-height: 70vh;
+  }
+
+  .mobilerow{
+    display: flex;
   }
 
   .mainpage__container{
