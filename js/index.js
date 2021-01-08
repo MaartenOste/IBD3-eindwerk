@@ -12,7 +12,7 @@ const setSelected = (id) => {
 		console.log(pos);
 		let id = setInterval(frame, 10);
 		function frame() {
-		  if (pos <= window.innerHeight*0.10) {
+		  if (pos <= window.innerHeight*0.12) {
 			clearInterval(id);
 			document.getElementById('events').classList.add('fixed');
 			moved = true;
